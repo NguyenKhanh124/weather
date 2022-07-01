@@ -12,7 +12,7 @@ describe('weather', function() {
   // find
   describe('find()', function() {
     it('should find a location with weather information', function(done) {
-      weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, result) {
+      weather.find({search: 'San Francisco, CA', degreeType: 'C'}, function(err, result) {
         if(err) return done(err);
 
         expect(err).to.be.equal(null);
